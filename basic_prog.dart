@@ -37,4 +37,7 @@ void main() {
   print("Age is now of " +
       ageValue.runtimeType.toString().toLowerCase() +
       " type");
+  // Double to int
+  int truncantedArea = areaCircle.toInt();
+  print("The truncanated area is $truncantedArea");
 }
