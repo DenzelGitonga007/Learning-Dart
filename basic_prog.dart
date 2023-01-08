@@ -29,4 +29,12 @@ void main() {
   Check out this multiline technique in Dart
   Enjoy!''';
   print(multiLine);
+
+  // Data type conversion
+  String age = "21";
+  print("Age is of " + age.runtimeType.toString().toLowerCase() + " type.");
+  int ageValue = int.parse(age);
+  print("Age is now of " +
+      ageValue.runtimeType.toString().toLowerCase() +
+      " type");
 }
