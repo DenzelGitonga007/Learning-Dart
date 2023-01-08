@@ -23,4 +23,10 @@ void main() {
       areaCircle
           .toStringAsFixed(1)
           .toString()); // .toStringAsFixed returns rounded off to decimal places
+
+  // Multiline text
+  String multiLine = '''Hi there!
+  Check out this multiline technique in Dart
+  Enjoy!''';
+  print(multiLine);
 }
