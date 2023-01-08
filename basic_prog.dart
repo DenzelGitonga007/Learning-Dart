@@ -13,4 +13,14 @@ void main() {
   int sum = num1 + num2;
   double div = num2 / num1; //Return a decimal
   print("The sum is $sum, and the quotient is $div");
+
+  // Datatypes
+  const pi = 3.14;
+  num radius = 9;
+  num areaCircle = pi * radius;
+
+  print("The area is " +
+      areaCircle
+          .toStringAsFixed(1)
+          .toString()); // .toStringAsFixed returns rounded off to decimal places
 }
