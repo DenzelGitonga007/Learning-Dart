@@ -78,4 +78,16 @@ void main(List<String> args) {
   print("\nQuestion 10: \nThe age as used, is of type ${age.runtimeType}");
   var numericalAge = int.parse(age);
   print("Now age is of type ${numericalAge.runtimeType}");
+
+/*   11. Suppose, you often go to restaurant with friends and you have to split amount of bill. 
+ Write a program to calculate split amount of bill. Formula= (total bill amount) / number of people */
+//  Get the bill
+  print("\nQuestion 11: \nHow much is the bill? 💸");
+  num? bill = num.parse(stdin.readLineSync()!);
+  print("How many friends are you, including your self? 🧑‍🤝‍🧑");
+  int? people = int.parse(stdin.readLineSync()!);
+  // Calculate
+  num splitAmount = bill / people;
+  print(
+      "Since you are $people people, and the bill is $bill, each of you will pay ${splitAmount.toStringAsFixed(2)}");
 }
