@@ -72,4 +72,10 @@ void main(List<String> args) {
   // print("\nQuestion 9: \nYour email: $email has been trimmed to ${email.trim()}");
   print(
       "\nQuestion 9: \nYour email: $email has been trimmed to ${email.replaceAll(" ", "")}");
+
+  // 10. Write a dart program to convert String to int.
+  String age = "21";
+  print("\nQuestion 10: \nThe age as used, is of type ${age.runtimeType}");
+  var numericalAge = int.parse(age);
+  print("Now age is of type ${numericalAge.runtimeType}");
 }
