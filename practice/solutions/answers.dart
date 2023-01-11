@@ -55,7 +55,8 @@ void main(List<String> args) {
   // The division
   num division = factor / divisor;
   num remainder = factor % divisor;
-  print("The quotient is $division and the remainder is $remainder");
+  print(
+      "The quotient is ${division.toStringAsFixed(2)} and the remainder is $remainder");
 
   // 8. Write a program to swap two numbers.
   // Get the numbers from the user
@@ -66,5 +67,9 @@ void main(List<String> args) {
   List<int> swap = [swapOne, swapTwo];
   print("The numbers are: $swap \nWhile swapped: ${swap[1]}, ${swap[0]}");
 
-  
+  // 9. Write a program in Dart to remove all whitespaces from String.
+  String email = " gitonga denzel @ gmail . com ";
+  // print("\nQuestion 9: \nYour email: $email has been trimmed to ${email.trim()}");
+  print(
+      "\nQuestion 9: \nYour email: $email has been trimmed to ${email.replaceAll(" ", "")}");
 }
