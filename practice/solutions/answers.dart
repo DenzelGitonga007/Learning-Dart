@@ -35,7 +35,7 @@ void main(List<String> args) {
   num? num2 = num.parse(stdin.readLineSync()!);
   // Calculation
   num square = num2 * num2;
-  print("The square of $num2 is $square");
+  print("The square of $num2 is ${square.toStringAsFixed(2)}");
 
   // 6. Write a program to print full name of a from first name and last name using user input.
   // First name
@@ -45,4 +45,15 @@ void main(List<String> args) {
   String? lastName = stdin.readLineSync();
   // Concatenate
   print("Well, I'll call you $firstName $lastName 😍");
+
+  // 7. Write a program to find quotient and remainder of two integers.
+  // Get the first integer
+  print("\nEnter the number to be divided: ");
+  num? factor = num.parse(stdin.readLineSync()!);
+  print("Enter the divisor: ");
+  num? divisor = num.parse(stdin.readLineSync()!);
+  // The division
+  num division = factor / divisor;
+  num remainder = factor % divisor;
+  print("The quotient is $division and the remainder is $remainder");
 }
