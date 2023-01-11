@@ -39,7 +39,7 @@ void main(List<String> args) {
 
   // 6. Write a program to print full name of a from first name and last name using user input.
   // First name
-  print("\nWhat is your first name?🤗");
+  print("\nQuestion 6: \nWhat is your first name?🤗");
   String? firstName = stdin.readLineSync();
   print("And your last name?😉");
   String? lastName = stdin.readLineSync();
@@ -48,7 +48,7 @@ void main(List<String> args) {
 
   // 7. Write a program to find quotient and remainder of two integers.
   // Get the first integer
-  print("\nEnter the number to be divided: ");
+  print("\nQuestion 7: \nEnter the number to be divided: ");
   num? factor = num.parse(stdin.readLineSync()!);
   print("Enter the divisor: ");
   num? divisor = num.parse(stdin.readLineSync()!);
@@ -56,4 +56,15 @@ void main(List<String> args) {
   num division = factor / divisor;
   num remainder = factor % divisor;
   print("The quotient is $division and the remainder is $remainder");
+
+  // 8. Write a program to swap two numbers.
+  // Get the numbers from the user
+  print("\nQuestion 8: \nEnter the first number: ");
+  int? swapOne = int.parse(stdin.readLineSync()!);
+  print("Enter the second number: ");
+  int? swapTwo = int.parse(stdin.readLineSync()!);
+  List<int> swap = [swapOne, swapTwo];
+  print("The numbers are: $swap \nWhile swapped: ${swap[1]}, ${swap[0]}");
+
+  
 }
