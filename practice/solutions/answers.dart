@@ -36,4 +36,13 @@ void main(List<String> args) {
   // Calculation
   num square = num2 * num2;
   print("The square of $num2 is $square");
+
+  // 6. Write a program to print full name of a from first name and last name using user input.
+  // First name
+  print("\nWhat is your first name?🤗");
+  String? firstName = stdin.readLineSync();
+  print("And your last name?😉");
+  String? lastName = stdin.readLineSync();
+  // Concatenate
+  print("Well, I'll call you $firstName $lastName 😍");
 }
