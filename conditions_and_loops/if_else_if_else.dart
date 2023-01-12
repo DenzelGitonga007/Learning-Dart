@@ -12,4 +12,8 @@ void main(List<String> args) {
   } else {
     print("Oh, you just turned 18? Haha, okay, you can vote now");
   }
+
+  // Using assert
+  var email = "gitongadenzel@gmail.com";
+  assert(email != "gitongadenzel@gmail.com", "Email changed");
 }
